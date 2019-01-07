@@ -10,6 +10,13 @@ namespace WebApplication2.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Countries = new List<string>
+            {
+                "India",
+                "US",
+                "Canada",
+                "Australia"
+            };
             return View();
         }
 
